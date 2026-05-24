@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //heart pattern
+      document.writeln("<h3>Heart pattern</h3>");
+      for (let i = 1; i <= 7; i++) {
+        for (let j = 1; j <= 7; j++) {
+          if (
+            (i == 2 && j != 1 && j != 4 && j != 7) ||
+            (i == 3 && (j == 1 || j == 7 || j == 4)) ||
+            (i == 4 && (j == 1 || j == 7)) ||
+            (i == 5 && (j == 2 || j == 6)) ||
+            (i == 6 && (j == 3 || j == 5)) ||
+            (i == 7 && j == 4)
+          ) {
+            document.writeln("*&nbsp&nbsp");
+          } else {
+            document.writeln("&nbsp&nbsp&nbsp");
+          }
+        }
+        document.writeln("<br>");
+      }
+      document.writeln("<br>");
+
+      // 1-25pattern
+      document.writeln("<h3>1-25 pattern</h3>");
+      let a = 1;
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5; j++) {
+          document.writeln(a);
+          a++;
+        }
+        document.writeln("<br>");
+      }
+      document.writeln("<br>");
+
+      // slanding pattern
+      document.writeln("<h3>Slanding pattern</h3>");
+      let b = 1;
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= i; j++) {
+          document.writeln(b, "&nbsp");
+          b++;
+        }
+        document.writeln("<br>");
+      }
+
+      document.writeln("<br>");
+
+      //  abcd pattern
+      document.writeln("<h3>Alphabets pattern</h3>");
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5; j++) {
+          if (j == 1) {
+            document.writeln("A&nbsp;");
+          } else if (j == 2) {
+            document.writeln("B&nbsp;");
+          } else if (j == 3) {
+            document.writeln("C&nbsp;");
+          } else if (j == 4) {
+            document.writeln("D&nbsp;");
+          } else if (j == 5) {
+            document.writeln("E &nbsp;");
+          }
+        }
+        document.writeln("<br>");
+      }
+      document.writeln("<br>");
+
+      //  abcd slanding pattern
+      document.writeln("<h3>star(*) pattern</h3>");
+      for (let i = 1; i <= 9; i++) {
+        for (let j = 1; j <= 5; j++) {
+          if (
+            j == 1 ||
+            ((i == 2 || i == 3 || i == 4 || i == 6 || i == 7 || i == 8) &&
+              (j == 1 || j == 2)) ||
+            (i == 3 && j == 3) ||
+            (i == 4 && (j == 3 || j == 4)) ||
+            i == 5 ||
+            (i == 6 && (j == 3 || j == 4)) ||
+            (i == 7 && j == 3)
+          ) {
+            document.writeln("*&nbsp;&nbsp;");
+          }
+        }
+        document.writeln("<br>");
+      }
+      document.writeln("<br>");
+
+      //  num slanding pattern
+      document.writeln("<h3>(*)and number pattern</h3>");
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5; j++) {
+          if (j <= i) {
+            document.writeln(i, "&nbsp");
+          } else {
+            document.writeln("*&nbsp");
+          }
+        }
+
+        document.writeln("<br>");
+      }
+      document.writeln("<br>");
+
+      //  abcd slanding opposite pattern
+      document.writeln("<h3>Alphabets slanding pattern</h3>");
+      for (let i = 5; i >= 1; i--) {
+        for (let j = 1; j <= i; j++) {
+          if (j == 1) {
+            document.writeln("a&nbsp;");
+          } else if (j == 2) {
+            document.writeln("b&nbsp;");
+          } else if (j == 3) {
+            document.writeln("c&nbsp;");
+          } else if (j == 4) {
+            document.writeln("d&nbsp;");
+          } else if (j == 5) {
+            document.writeln("e&nbsp;");
+          }
+        }
+        document.writeln("<br>");
+      }
+      document.writeln("<br>");
+
+      //  number square pattern
+      document.writeln("<h3>number square pattern</h3>");
+      //  let f=1
+      //  let h=1
+      //  let i=1
+      //  let k=1
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5; j++) {
+          if (j == 1) {
+            document.writeln(i, "&nbsp");
+          } else if (j == 2) {
+            document.writeln(i * 2, "&nbsp");
+            //    f++
+          } else if (j == 3) {
+            document.writeln(i * 3, "&nbsp");
+            //    h++
+          } else if (j == 4) {
+            document.writeln(i * 4, "&nbsp");
+          } else if (j == 5) {
+            document.writeln(i * 5, "&nbsp");
+            //    k++
+          }
+        }
+        document.writeln("<br>");
+      }
+      document.writeln("<br>");
+
+      //  square pattern
+      document.writeln("<h3>square pattern</h3>");
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 9; j++) {
+          if (
+            (i == 1 && j == 5) ||
+            (i == 2 && (j == 4 || j == 6)) ||
+            (i == 3 && (j == 3 || j == 7)) ||
+            (i == 4 && (j == 2 || j == 8)) ||
+            i == 5
+          ) {
+            document.writeln("*&nbsp");
+          } else {
+            document.writeln("&nbsp&nbsp&nbsp");
+          }
+        }
+        document.writeln("<br>");
+      }
+      document.writeln("<br>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  /* border: 1px solid; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  background: url(./img//boliviainteligente-6-lDKuXbm-w-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: luminosity;
+}
+form h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+form {
+  /* border: 1px solid; */
+  height: 400px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(./img//boliviainteligente-6-lDKuXbm-w-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-color: blueviolet;
+  background-blend-mode: multiply;
+  border-radius: 30px;
+  box-shadow: 0px 0px 50px white;
+}
+form textarea {
+  /* border: 1px solid red; */
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.76);
+}
+.click {
+  margin-top: 30px;
+  display: flex;
+  gap: 50px;
+}
+
+button {
+  height: 40px;
+  width: 90px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(29, 133, 224);
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: blueviolet;
+}
+ form p{
+/* border: 1px solid; */
+color: white;
+height: 20px;
+width: 190px;
+margin-top: 5px;
+}
+.div{
+    margin: 20px 0px 18px;
+    font-size: 0.9rem;
+}

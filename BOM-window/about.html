@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>History Object Demo</title>
+</head>
+<body>
+
+  <h2>History Object Example</h2>
+
+  
+  <a href="about.html">Go to Page 1</a> |
+  <a href="contact.html">Go to Page 2</a>|
+  <a href="index.html">Go to Page 3</a>
+  <br><br>
+
+  <button onclick="goBack()" >Back</button>
+  <button onclick="goForward()">Forward</button>
+  <button onclick="goTwoBack()">Go -2</button>
+  <button onclick="showLength()">Show History Length</button>
+
+  <p id="output"></p>
+
+  <script>
+    function goBack() {
+      history.back();
+    }
+
+    function goForward() {
+      history.forward();
+    }
+
+    function goTwoBack() {
+      history.go(-2);
+    }
+
+    function showLength() {
+      document.getElementById("output").innerText =
+        "History Length: " + history.length;
+    }
+  </script>
+
+</body>
+</html>

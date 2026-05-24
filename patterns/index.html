@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>patterns</title>
+  </head>
+  <body>
+    <script>
+      //   for (i = 1; i <= 5; i++) {
+      //     for (j = 1; j <= 5; j++) {
+      //       if ((i == 1 && j == 1) || (i == 1 && j == 4)) {
+      //         document.writeln(`*`);
+      //       } else if ((i == 2 && j == 1) || (i == 2 && j == 3)) {
+      //         document.writeln(`*`);
+      //       } else if ((i == 3 && j == 1) || (i == 3 && j == 2)) {
+      //         document.writeln(`*`);
+      //       } else if ((i == 4 && j == 1) || (i == 4 && j == 3)) {
+      //         document.writeln(`*`);
+      //       } else if ((i == 5 && j == 1) || (i == 5 && j == 4)) {
+      //         document.writeln(`*`);
+      //       } else {
+      //         document.writeln("&nbsp;&nbsp;");
+      //       }
+      //     }
+      //     document.writeln("<br>");
+      //   }
+
+      //10
+      // for (i = 1; i <= 5; i++) {
+      //   for (j = 1; j <= 5; j++) {
+
+      //     if (i == 1 && (j==1||j==3||j==4||j==5)){
+      //       document.writeln(`*`);
+      //     }
+      //      else if (i == 2 && (j == 1||j==3||j==5)) {
+      //       document.writeln(`*`);
+      //      }
+      //        else if (i == 3 && (j == 1 || j==3||j==5)){
+      //         document.writeln(`*`);
+      //        }
+      //       else if (i == 4 && (j == 1||j== 3||j==5)) {
+      //         document.writeln(`*`);
+      //      }
+      //       else if (i == 5 && (j == 1||j== 3||j==4||j==5)) {
+      //         document.writeln(`*`);
+      //       }
+      //     else {
+      //       document.writeln("&nbsp;&nbsp;");
+      //     }
+      //   }
+      //   document.writeln("</br>");
+      // }
+
+//       for (r = 1; r <= 5; r++) {
+//         for (c = 1; c <= 5; c++) {
+// document.writeln(r,c);
+//         }
+//         document.writeln("<br>");
+//       }
+
+//A
+      // for(let i=1;i<=10;i++){
+      //   let c=i%2 ? "E" :"O"
+      //   document.writeln(`${c}<br>`)
+      // }
+      // for( r=1;r<=5;r++){
+      //   for( c=1;c<=5;c++){
+      //      if((r==1)&&(c==3||c==4)){
+      //   document.writeln("*");
+      // }
+      // else if((r==2)&&(c==2||c==5)){
+      //   document.writeln("*");
+      // }
+      // else if((r==3)&&(c==2||c==3||c==4||c==5)){
+      //   document.writeln("*");
+      // }
+      // else if((r==4)&&(c==2||c==5)){
+      //   document.writeln("*");
+      // }
+      // else if((r==5)&&(c==2||c==5)){
+      //   document.writeln("*");
+      // }
+      //  else{
+      //   document.writeln(" &nbsp;&nbsp;");
+      // }
+      //   }
+      // document.writeln("<br>");
+      // }
+
+//B
+      // for(let r=1;r<=5;r++){
+      //   for(let c=1;c<=5;c++){
+      //   if((r==1)&&(c==2||c==3||c==4||c==5)){
+      //     document.writeln("*")
+      //   }
+      //   else if((r==2)&&(c==2||c==5)){
+      //      document.writeln("*")
+      //   }
+      //   else if((r==3)&&(c==2||c==3||c==4||c==5)){
+      //      document.writeln("*")
+      //   }
+      //    else if((r==4)&&(c==2||c==5)){
+      //      document.writeln("*")
+      //   }
+      //   else if((r==5)&&(c==2||c==3||c==4||c==5)){
+      //      document.writeln("*")
+      //   }
+      //   else{
+      //     document.writeln("&nbsp; &nbsp;")
+      //   }
+      // }
+      // document.writeln("<br>")
+      // }
+//8
+      // for(let r=1;r<=5;r++){
+      //   for(let c=1;c<=5;c++){
+      //   if((r==1)&&(c==2||c==3||c==4||c==5)){
+      //     document.writeln("*")
+      //   }
+      //   else if((r==2)&&(c==2||c==5)){
+      //      document.writeln("*")
+      //   }
+      //   else if((r==3)&&(c==2||c==3||c==4||c==5)){
+      //      document.writeln("*")
+      //   }
+      //    else if((r==4)&&(c==2||c==5)){
+      //      document.writeln("*")
+      //   }
+      //   else if((r==5)&&(c==2||c==3||c==4||c==5)){
+      //      document.writeln("*")
+      //   }
+      //   else{
+      //     document.writeln("&nbsp;&nbsp;")
+      //   }
+      // }
+      // document.writeln("<br>")
+      // }
+
+//1
+      // for(let r=1;r<=5;r++){
+      //   for(let c=1;c<=5;c++){
+      //   if((r==1)&&(c==4)){
+      //     document.writeln("*")
+      //   }
+      //   else if((r==2)&&(c==3||c==4)){
+      //      document.writeln("*")
+      //   }
+      //   else if((r==3)&&(c==2||c==4)){
+      //      document.writeln("*")
+      //   }
+      //    else if((r==4)&&(c==4)){
+      //      document.writeln("*")
+      //   }
+      //   else if((r==5)&&(c==2||c==3||c==4||c==5)){
+      //      document.writeln("*")
+      //   }
+      //   else{
+      //     document.writeln("&nbsp;&nbsp;")
+      //   }
+      // }
+      // document.writeln("<br>")
+      // }
+    document.writeln("<br><br><h2>Heart Pattern<h2>")
+      //heart pattern
+      for(let r=1;r<=9;r++){
+        for(let c=1;c<=9;c++){
+
+        if((r==1)&&(c!=1)&&(c!=5)&&(c!=9)){
+          document.writeln("*&nbsp;")
+        }
+        else if((r==2||r==8)&&(c==5)){
+          document.writeln("*&nbsp;")
+        }
+        else if((r==2||r==3||r==4)&&(c==1||c==9)){
+          document.writeln("*&nbsp;")
+        }    
+        else if((r==5)&&(c==2||c==8)){
+          document.writeln("*&nbsp;")
+        }
+        else if((r==6)&&(c==3||c==7)){ 
+          document.writeln("*&nbsp;")
+        }
+        else if((r==7)&&(c==4||c==6)){
+          document.writeln("*&nbsp;")
+        }
+        else{ 
+          document.writeln("&nbsp; &nbsp;")
+        }
+      }
+       document.writeln("<br>")
+    }
+    document.writeln("<br><br><h2>77 Pattern<h2>")
+
+   //77 pattern
+    for(let r=1;r<=6;r++){
+        for(let c=1;c<=9;c++){
+
+        if((r==1)&&(c!==5)||(c==4||c==9)){
+          document.writeln("*&nbsp;")
+        }
+        else{
+          document.writeln("&nbsp;&nbsp;&nbsp;")
+        }
+      }
+       document.writeln("<br>")
+    }
+ document.writeln("<br><br><h2>bar Pattern<h2>")
+
+    //bar pattern
+    for(let r=1;r<=9;r++){
+        for(let c=1;c<=9;c++){
+
+        if((r==1)||(r==9)||(c==1)){
+          document.writeln("*&nbsp;")
+        }
+         else if((r==3)&&(c!=8&&c!=9)){
+          document.writeln("*&nbsp;")
+        }
+        else if((r==5)&&(c!=9)){
+          document.writeln("*&nbsp;")
+        }
+        else if((r==7)&&(c==1||c<=5)){
+          document.writeln("*&nbsp;")
+        }
+        else{
+          document.writeln("&nbsp;&nbsp;")
+        }
+      }
+       document.writeln("<br>")
+    }
+
+    document.writeln("<br><br><h2>House Pattern<h2>")
+
+    //house pattern
+    for(let r=1;r<=9;r++){
+        for(let c=1;c<=9;c++){
+
+        if((r==1)&&(c==5)){
+          document.writeln("*")
+        }
+         else if((r==2)&&(c==4||c==6)){
+          document.writeln("*&nbsp;")
+        }
+        else if((r==3)&&(c==3||c==7)){
+          document.writeln("*&nbsp;")
+        }
+        else if((r==4)&&(c==2||c==8)){
+          document.writeln("*&nbsp;")
+        }
+        else if((r==5||r==9)){
+          document.writeln("*&nbsp;")
+        }
+         else if((r==5||r==6||r==7||r==8)&&(c==1||c==9)){
+          document.writeln("*&nbsp;")
+        }
+        else{
+          document.writeln("&nbsp;&nbsp;&nbsp;")
+        }
+      }
+       document.writeln("<br>")
+    }
+
+
+
+    </script>
+  </body>
+</html>

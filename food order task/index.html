@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Order</title>
+  </head>
+  <body>
+    <script>
+      let product = "";
+      let price,stock = 0;
+      let sale = 0;
+      let a = true;
+      while (a) {
+        let get = prompt(
+          `Food order Menu \n 1.create stock \n 2.Restock \n 3.sales \n 4.view \n 5.total products \n 6.Exit`
+        );
+        switch (get) {
+          case "1":
+            product = prompt("enter your food name");
+            price = parseFloat(prompt("enter your price"));
+            stock = Number(prompt(" enter total stock"));
+            alert(`your opening stock sucessfully created!`);
+            break;
+
+          case "2":
+            let product1 = prompt("enter your food name");
+            if (product == product1) {
+              stocks = Number(prompt("how mach food want restore?"));
+              alert(`${stocks} items restock successfully!`);
+            } else {
+              console.log("invalid food name");
+            }
+            break;
+
+          case "3":
+            let sales = prompt("enter your food name");
+            if (product == sales) {
+              sale = prompt("How much food was sold today?");
+              stocks -= sale;
+              alert(`${sale} items sales!`);
+            } else if (stock >= sale) {
+              console.log("insufficient stock");
+            } else {
+              console.log("invalid food name");
+            }
+            break;
+
+          case "4":
+            let view = prompt("enter your food name");
+            if (product == view) {
+              stock += stocks;
+              alert(`${stock} = total products`);
+            } else {
+              console.log("invalid food name");
+            }
+            break;
+
+          case "5":
+            let accounts = prompt("enter your food name");
+            if (product == accounts) {
+              console.log(`product: ${product}`);
+              console.log(`price: ${price}`);
+              console.log(`sale: ${sale}`);
+              console.log(`restock: ${stocks}`);
+              console.log(`Total restock: ${stock}`);
+            } else {
+              console.log("invalid food name");
+            }
+            break;
+
+          case "6":
+            a = false;
+            break;
+          default: {
+            console.log("invalid number 1 to 5 numbr only available");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

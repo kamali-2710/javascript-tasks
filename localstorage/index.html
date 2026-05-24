@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Storage=> 2 types
+      // local and session Storage
+      //SetItem
+        localStorage.setItem("studentName", "kamali");
+        localStorage.setItem("class", "XII");
+        localStorage.setItem("subject", "computer science");
+        localStorage.setItem("section", "A");
+        localStorage.setItem("performance", "good");
+
+      //   //GetItem
+        let student = localStorage.getItem("studentName");
+        let Class = localStorage.getItem("class");
+        let subject = localStorage.getItem("subject");
+        let section = localStorage.getItem("section");
+        let performance = localStorage.getItem("performance");
+        console.log( typeof student,student,Class,subject,section,performance)
+
+      //removeItem
+      //   localStorage.removeItem("performance");
+      //  console.log( typeof student,student,Class,subject,section,performance)
+
+      //clear
+      //   localStorage.clear()
+
+      //length
+        let b = localStorage.length
+        console.log(b)
+
+              localStorage.setItem("mark","20")
+              let ab = localStorage.getItem("mark","20")
+             console.log(ab)
+      //key
+        s= localStorage.key(1);
+        console.log(s);
+
+      //session storage
+      // sessionStorage.setItem("studentName", "kamali");
+      // sessionStorage.setItem("class", "XII");
+      // sessionStorage.setItem("subject", "computer science");
+      // sessionStorage.setItem("section", "A");
+      // sessionStorage.setItem("performance", "good");
+
+      // let student = sessionStorage.getItem("studentName");
+      // let Class = sessionStorage.getItem("class");
+      // let subject = sessionStorage.getItem("subject");
+      // let section = sessionStorage.getItem("section");
+      // let per = sessionStorage.getItem("performance", "good");
+
+      // console.log(typeof student, student, Class, subject, section, per);
+
+      // //removeItem
+      // sessionStorage.removeItem("performance");
+
+      //clear
+    //   sessionStorage.clear();
+
+    //   key
+    // let k= sessionStorage.key(0);
+    // console.log(k)
+
+    // let d= sessionStorage.length
+    // console.log(d)
+    
+
+
+    // JSON
+    let names=['kamali',12,30,true]
+     names=JSON.stringify(names)
+     localStorage.setItem("std_data",names)
+    let h= localStorage.getItem("std_data")
+    console.log(JSON.parse(h))
+
+
+    
+    </script>
+  </body>
+</html>

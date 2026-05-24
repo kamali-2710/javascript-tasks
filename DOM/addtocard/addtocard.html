@@ -1,0 +1,158 @@
+color.html<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AddToCard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      header {
+        /* border: 1px solid; */
+        width: 100%;
+      }
+      header nav {
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: space-evenly;
+      }
+      nav a {
+        /* border: 1px solid; */
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: white;
+      }
+      body {
+        /* border: 1px solid; */
+        height: 97vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      .cards{
+        /* border: 1px solid; */
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        margin-left: 10%;
+      }
+      .wrapper {
+        /* border: 1px solid; */
+        width: 50%;
+        height: 65%;
+      }
+      body h3{
+        /* border: 1px solid rgb(158, 103, 103); */
+        width: 3%;
+        font-size: 1.2rem;
+        margin: -1.5% 15% 2% 105%;
+        color: rgba(230, 176, 107, 0.804);
+      }
+      body h2 {
+        /* border: 1px solid red; */
+        margin: 2% 10% -1.5% 3%;
+        color: rgba(230, 176, 107, 0.804);
+      }
+        img {
+        /* border: 1px solid red; */
+        height: 80%;
+        width: 55%;
+        display: block;
+      }
+  
+      .cards button {
+        height: 4vh;
+        width: 14%;
+        font-size: 1.3rem;
+        margin: 9px 0px 1px 4px;
+      }
+
+      .cards .add {
+        height: 10%;
+        width: 21%;
+        border: none;
+        background-color: rgba(91, 58, 15, 0.708);
+      }
+      .add a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.9rem;
+      }
+      .wrapper1 {
+        /* border: 1px solid; */
+        width: 50%;
+        height: 65%;
+      }
+      .cards h1 {
+        width: 50%;
+      }
+      .cards p {
+        width: 60%;
+        font-size: 0.8rem;
+        text-align: start;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Shop</a>
+        <a href="">Categories</a>
+        <a href="">Contact</a>
+      </nav>
+    </header>
+    <h3><i class="fa-solid fa-cart-arrow-down"></i><span id="card">0</span></h3>
+    <div class="cards">
+    <div class="wrapper">
+      <img src="./img/view-coffee-cup.jpg" alt="" />
+      <button onclick="decrement()">-</button>
+      <button class="add"><a href="./index.html">AddToCard</a></button>
+      <button onclick="increment()">+</button>
+      <h2>Cappacino</h2>
+      <p>
+        A cappuccino is the perfect balance of espresso, steamed milk and foam.
+      </p>
+       </div>
+       <div class="wrapper1">
+      <img src="./img/coffee-beverage-with-chocolate-syrup-inside.jpg" alt="" />
+      <button onclick="decrement()">-</button>
+      <button class="add"><a href="./index.html">AddToCard</a></button>
+      <button onclick="increment()">+</button>
+      <h2>Latti</h2>
+      <p>
+      Latte is a coffee made with espresso & steamed milk, with a smooth & mild taste.
+      </p>
+      </div>
+    </div>
+    
+    <!-- script -->
+    <script>
+      let product = 0;
+      let increment = () => {
+        let a = document.getElementById("card");
+        product = product + 1;
+        a.innerText = product;
+      };
+      let decrement = () => {
+        let a = document.getElementById("card");
+        if (product > 0) {
+          product = product - 1;
+        }
+        a.innerText = product;
+      };
+    </script>
+  </body>
+</html>

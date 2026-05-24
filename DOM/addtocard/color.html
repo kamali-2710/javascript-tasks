@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background Color</title>
+</head>
+<body>
+    <h1 id="red1">Red color</h1>
+    <button onclick="redcolor('green')">click</button>
+    <script>
+// single color
+let redcolor=()=>{
+   let a= document.getElementById("red1")
+   red1.style.backgroundColor='red'
+}
+</script> 
+
+ <!-- multi button with multicolor  -->
+   <h2 id="difcolor">4 different color</h2>
+   <button onclick="color('red')">red</button>
+    <button onclick="color('blue')">blue</button>
+     <button onclick="color('pink')">pink</button>
+      <button onclick="color('green')">green</button>
+      <script>
+      let color=(col)=>{
+       let b= document.getElementById("difcolor")
+        difcolor.style.backgroundColor=col
+      }
+      </script>
+
+         <!-- type the color -->
+          <h3 id="typecolor">Which color you want</h3>
+          <input type="text" id="colour1">
+          <button onclick="changeclr()">click</button>
+          <script>
+           let changeclr=()=>{
+                let c= document.getElementById("typecolor")
+                let e=document.getElementById("colour1").value
+                typecolor.style.backgroundColor=e
+            }
+           </script>
+           
+            <!-- color picker -->
+          <h3 id="chooseclr">choose your color</h3>
+          <input type="color" id="colour2">
+          <button onclick="clrpicker()">click</button>
+          <script>
+           let clrpicker=()=>{
+                let d= document.getElementById("chooseclr")
+                let f=document.getElementById("colour2").value
+                chooseclr.style.backgroundColor=f
+            }
+          </script>
+</body>
+</html>

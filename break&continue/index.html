@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>break&continue</title>
+  </head>
+  <body>
+    <script>
+      for (i = 1; i <= 10; i++) {
+        if (i == 5) {
+          break;
+        }
+        console.log(i);
+      }
+
+      // continue
+      //  for(i=1;i<=10;i++){
+
+      //     if(i==5){
+      //         continue;
+      //     }
+      //    console.log(i)
+      // }
+      for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= 5; j++) {
+          document.writeln(i, j);
+        }
+        document.writeln("<br>");
+      }
+      document.writeln("<br>");
+
+      for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= 5; j++) {
+          if (i == 1 || i == 5||j == 1 || j == 5 ) {
+            document.writeln(i, j);
+          } 
+            else {
+            document.writeln("&nbsp;&nbsp;&nbsp;&nbsp;");
+          }
+        }
+        document.writeln("<br>");
+      }
+      document.writeln("<br>");
+
+      for (i = 5; i >= 1; i--) {
+        for (j = 1; j <= i; j++) {
+          document.writeln(j);
+        }
+        document.writeln("<br>");
+      }
+
+      for (i = 1; i <= 5; i++) {
+        for (j = 5; j >= i; j--) {
+          document.writeln(j);
+        }
+        document.writeln("<br>");
+      }
+    </script>
+  </body>
+</html>

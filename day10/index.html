@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // **
+      let a = 2;
+      let b = 3;
+      console.log(a ** b);
+
+      //swap
+      let a1 = 5;
+      let b1 = 3;
+      c1 = a1;
+      a1 = b1;
+      b1 = c1;
+      console.log(a1, b1);
+
+      //  armstrong number
+      let get1 = 1;
+      let get2 = 5;
+      let get3 = 3;
+      let total = get1 * get1 * get1 + get2 * get2 * get2 + get3 * get3 * get3;
+      let get = prompt("enter the number");
+      if (get > 0 && get <= 9) {
+        console.log("armstrong");
+      } else if (get == 153) {
+        console.log("armstrong");
+      } else if (get == 370) {
+        console.log("armstrong");
+      } else if (get == 371) {
+        console.log("armstrong");
+      } else if (get == 407) {
+        console.log("armstrong");
+      } else {
+        console.log("not a armstrong");
+      }
+
+      //prime number
+      let num = prompt("enter the number");
+      if (num % 2 == 0 || num % 1 == 0) {
+        console.log(num, "prime num");
+      } else {
+        console.log(num, "Not prime num");
+      }
+
+      //age
+      let age = prompt("enter the number");
+      if (age >= 5) {
+        console.log("child");
+      } else {
+        console.log("not child");
+      }
+
+      // ternary
+      let a2 = 2;
+      let b2 = 4;
+      console.log(a2 > b2 ? "true" : "false");
+
+      // mark
+      // 90 - 100 => A
+      // 80 - 89 => B
+      // 70 - 79 => C
+      // 60 - 69 => D
+      // 35 - 59 => E
+      //  below 35 => F
+
+      let mark = prompt("enter the number");
+      if (mark > 100) {
+        console.log("Invalid");
+      } else if (mark >= 90 && mark <= 100) {
+        console.log("A Grade");
+      } else if (mark >= 80 && mark <= 89) {
+        console.log("B Grade");
+      } else if (mark >= 70 && mark <= 79) {
+        console.log("C Grade");
+      } else if (mark >= 60 && mark <= 69) {
+        console.log("D Grade");
+      } else if (mark >= 35 && mark <= 59) {
+        console.log("E Grade");
+      } else {
+        console.log("Fail");
+      }
+
+      //  100 - 150 => 10%
+      //     200 - 250 => 20%
+      //     300 - 350 => 30%
+      //     above 500 => 50%
+      //     600*50/100
+     //payment
+      let payment = prompt("Enter the Payment");
+      if (payment >= 100 && payment <= 150) {
+        let discount = (payment * 10) / 100;
+        let total = payment - discount;
+        console.log("You will get 10% discount your amount", total, "Rs");
+      } else if (payment >= 200 && payment <= 250) {
+        let discount = (payment * 20) / 100;
+        let total = payment - discount;
+        console.log("You will get 20% discount your amount", total, "Rs");
+      } else if (payment >= 300 && payment <= 350) {
+        let discount = (payment * 30) / 100;
+        let total = payment - discount;
+        console.log("You will get 30% discount your amount", total, "Rs");
+      } else if (payment >= 500) {
+        let discount = (payment * 50) / 100;
+        let total = payment - discount;
+        console.log("You will get 50% discount your amount", total, "Rs");
+      } else {
+        console.log("your amount is", payment, "Rs");
+      }
+    </script>
+  </body>
+</html>

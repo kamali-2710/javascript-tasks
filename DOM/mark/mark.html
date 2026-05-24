@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mark</title>
+  </head>
+  <link rel="stylesheet" href="./style.css">
+  <body>
+   
+    <form>
+       <h1>Marks</h1>
+    <input type="number" class="name" placeholder="Tamil mark" id="tamil" /> <br />
+    <span id="tamerr" class="err"></span> <br>
+    <input type="number" placeholder="English mark" id="eng" /><br />
+    <span id="engerr" class="err"></span> <br>
+    <input type="number" placeholder="Maths mark" id="maths" /> <br />
+    <span id="matherr" class="err"></span> <br>
+    <input type="number" placeholder="Science mark" id="sci" /> <br />
+    <span id="scierr" class="err"></span> <br>
+    <input type="number" placeholder="Social mark" id="social" /> <br />
+    <span id="socialerr" class="err"></span> <br>
+     </form>
+    <button onclick="total()">Submit</button>
+    <h3 id="name"></h3>
+   
+    <script>
+      let total = () => {
+        let ta =Number(document.getElementById("tamil").value)
+        let eng =Number(document.getElementById("eng").value)
+        let maths = Number(document.getElementById("maths").value)
+        let sci =Number(document.getElementById("sci").value)
+        let social = Number(document.getElementById("social").value)
+
+      let tamerr = document.getElementById("tamerr");
+      let engerr = document.getElementById("engerr");
+      let matherr = document.getElementById("matherr");
+      let scierr = document.getElementById("scierr");
+      let socialerr = document.getElementById("socialerr");
+      
+      if (ta == "") {
+        tamerr.innerText="Fill the tamil mark"
+      }
+      else if((ta<=0)||(ta>100)){
+        tamerr.innerText="Invalid Mark"
+      }
+      else{
+         tamerr.innerText=""
+      }
+
+       if (eng == "") {
+        engerr.innerText="Fill the english mark"
+      }
+      else if((eng<=0)||(eng>100)){
+        engerr.innerText="Invalid Mark"
+      }
+      else{
+         engerr.innerText=""
+      }
+
+      if (maths == "") {
+        matherr.innerText="Fill the maths mark"
+      }
+      else if((maths<=0)||(maths>100)){
+        matherr.innerText="Invalid Mark"
+      }
+      else{
+         matherr.innerText=""
+      }
+      if (sci == "") {
+        scierr.innerText="Fill the science mark"
+      }
+     else if((sci<=0)||(sci>100)){
+        scierr.innerText="Invalid Mark"
+      }
+      else{
+         scierr.innerText=""
+      }
+      if (social == "") {
+        socialerr.innerText="Fill the social mark"
+      }
+      else if((social<=0)||(social>100)){
+        socialerr.innerText="Invalid Mark"
+      }
+      else{
+         socialerr.innerText=""
+      }
+
+     let totalmark=Number(ta+eng+maths+sci+social)
+       let total=document.getElementById("name")
+       total.innerText=(`Your total mark : ${totalmark}`)
+          }
+
+    </script>
+  </body>
+</html>

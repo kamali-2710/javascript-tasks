@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch case using while loop</title>
+  </head>
+  <body>
+    <script>
+      let option = prompt(
+        "Choose the option \n a)even or odd number \n b)sum of digit \n c)1-100(increment of 5)"
+      );
+      switch (option) {
+        case "a":
+          let a = 10;
+          while (a >= 1) {
+            if (a % 2 == 0) {
+              console.log(`${a} kamali`);
+            } else {
+              console.log(`${a} suba`);
+            }
+            a--;
+          }
+          break;
+
+        case "b":
+          let num=prompt("enter the number")
+          let a1=Math.floor(num/100)
+          let b1=Math.floor(num%100/10)
+          let c1=num%10
+        console.log(a1,b1,c1)
+        sum=a1+b1+c1
+        console.log(`total = ${sum}`)
+break;
+
+        case "c":
+          let f = 0;
+          while (f <= 100) {
+            console.log(`${f}increment of 5`);
+            f=f+5
+          }
+          break;
+      }
+
+
+    </script>
+  </body>
+</html>

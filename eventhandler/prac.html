@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <h2 id="section1">Section 1</h2>
+
+    <button onclick="getHash()">Get Hash</button>
+    <button onclick="setHash()">Set Hash</button>
+
+    <script>
+      function getHash() {
+        ("Current Hash: " + window.location.hash);
+      }
+
+      function setHash() {
+        window.location.hash = "section1";
+      } 
+
+ 
+ 
+ 
+//        <div id="output"></div>
+//     <script>
+//       document.getElementById("output").innerHTML =
+//         "The protocol of the current location is: " + location.protocol;
+    
+
+
+// <script>
+//   console.log(window.location.host);
+
+    
+// <script>
+//   console.log(window.location.hostname);
+// </script>
+
+
+
+
+<script>
+  console.log(window.location.href);
+</script>
+
+
+
+
+
+
+<script>
+  console.log(window.location.origin);
+</script> 
+
+
+
+
+
+<!-- <script>
+  console.log(window.location.pathname);
+</script>
+
+
+<script>
+  console.log(window.location.search);
+</script> -->
+
+
+
+
+<!-- <script>
+  location.assign("https://www.google.com");
+</script>
+
+
+<script>
+  location.replace("https://www.google.com");
+</script>
+
+
+<script>
+  location.reload();
+</script> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Window Location Properties</title>
+</head>
+<body>
+
+<h2>Window Location Properties</h2>
+
+<button onclick="showLocation()">Show Location Details</button>
+
+<p id="output"></p>
+
+<script>
+  function showLocation() {
+    let text = "";
+
+    text += "Hash: " + window.location.hash + "<br>";
+    text += "Host: " + window.location.host + "<br>";
+    text += "Hostname: " + window.location.hostname + "<br>";
+    text += "Href: " + window.location.href + "<br>";
+    text += "Origin: " + window.location.origin + "<br>";
+    text += "Pathname: " + window.location.pathname + "<br>";
+    text += "Port: " + window.location.port + "<br>";
+    text += "Protocol: " + window.location.protocol + "<br>";
+    text += "Search: " + window.location.search + "<br>";
+
+    document.getElementById("output").innerHTML = text;
+  }
+
+</script>
+
+</body>
+</html>
+
+  </body>
+</html>

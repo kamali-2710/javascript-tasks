@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form>
+      <select id="direction" class="box">
+        <option>ChooseDirection</option>
+        <option value="to right">to right</option>
+        <option value="to left">to left</option>
+        <option value="to top">to top</option>
+        <option value="to bottom">to bottom</option>
+      </select>
+      <!-- <select id="color1" class="box">
+        <option>Choose First color</option>
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="purple">purple</option>
+        <option value="pink">pink</option>
+        <option value="yellow">yellow</option>
+        <option value="blue">blue</option>
+      </select> -->
+      <input type="color" id="color1" class="box">
+
+      <!-- <select id="color2" class="box"> -->
+        <!-- <option>Choose second color</option>
+        <option value="orange">orange</option>
+        <option value="black">black</option>
+        <option value="magenta">Magenta</option>
+        <option value="lime">Lime</option>
+        <option value="teal">Teal</option>
+        <option value="brown">Brown</option> -->
+        <input type="color" id="color2" class="box">
+      <!-- </select> -->
+    </form>
+
+    <script>
+      
+      let direction = document.querySelector("#direction");
+      let color1 = document.querySelector("#color1");
+      let color2 = document.querySelector("#color2");
+
+      console.log(direction,color1,color2)
+      let box = document.querySelector("body");
+
+      box.addEventListener("change", () => {
+        document.body.style.background = `linear-gradient(${direction.value},${color1.value},${color2.value})`;
+        console.log("gi")
+      });
+    </script>
+  </body>
+</html>

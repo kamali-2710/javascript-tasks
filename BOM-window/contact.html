@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Location Methods Example</title>
+</head>
+<body>
+
+
+
+  <h2>Location Methods Demo</h2>
+
+  <button onclick="goAssign()">location.assign()</button>
+  <button onclick="goReplace()">location.replace()</button>
+  <button onclick="goReload()">location.reload()</button>
+
+  <script>
+    function goAssign() {
+      location.assign("https://google.com");
+    }
+
+    function goReplace() {
+      location.replace("https://google.com");
+    }
+
+    function goReload() {
+      location.reload();
+    } 
+
+    console.log(history.length);
+     history.back();
+  </script>
+
+</body>
+</html>

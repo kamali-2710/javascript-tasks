@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  height: 40vh;
+  display: grid;
+  place-items: center;
+  margin-top: 10%;
+  font-family: "Poppins", sans-serif;
+  background-image: url(./img/5223666.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+form {
+  /* border: 1px solid white; */
+  width: 40%;
+  height: 73vh;
+  text-align: center;
+  margin-top: -4%;
+  box-shadow: 0px 0px 20px white;
+  border-radius: 10%;
+  background-color: #0234ab;
+}
+form .name {
+  /* border: 1px solid; */
+  margin-top: 1%;
+}
+form h1 {
+  color: white;
+}
+form input {
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 5vh;
+  width: 80%;
+  background-color: transparent;
+  padding-left: 3%;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+::placeholder {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.783);
+}
+.err {
+  /* border: 1px solid rgb(250, 88, 88); */
+  width: 30%;
+  font-size: 0.7rem;
+  color: rgba(24, 20, 20, 0.911);
+  margin-left: -63%;
+}
+button {
+  /* border: 1px solid red; */
+  height: 40px;
+  width: 33.5%;
+  background-color: rgba(62, 202, 214, 0.616);
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  margin-top: -11%;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #3d70e7;
+}
+h3 {
+  /* border: 1px solid red; */
+  width: 14%;
+  margin-top: -3%;
+  color: white;
+  margin-left: 2%;
+}

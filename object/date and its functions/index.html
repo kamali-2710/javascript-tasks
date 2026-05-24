@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // const day = Date();    //string Sat Jan 31 2026 03:11:20 GMT+0530 (India Standard Time)
+      // console.log(typeof day, day);
+
+      // const d = new Date(); //object Sat Jan 31 2026 03:12:06 GMT+0530 (India Standard Time)
+      // console.log(typeof d, d);
+
+      // const b = new Date(223243424);  //object Thu Jan 01 1970 05:30:00 GMT+0530 (India Standard Time)
+      // console.log(typeof b, b);
+
+      // const c = Date.now();  //number 1769809338886
+      // console.log(typeof c, c);
+
+      // const birthday = new Date("2026-10-30"); //Fri Oct 30 2026 05:30:00 GMT+0530 (India Standard Time)
+      // console.log(birthday);
+
+      // const specificdate = new Date(2023, 12, 13, 5, 30, 22);
+      //  console.log(specificdate);
+
+      // const dateFromMilliseconds = new Date("2002-10-27");  // Represents January 1, 2021
+      //   console.log(dateFromMilliseconds)
+
+      //   const dob=()=>{
+      //     const dateFromMilliseconds = new Date("2002-10-27");  // Represents January 1, 2021
+      //   console.log(dateFromMilliseconds)
+      //   }
+      //   dob()
+
+
+
+  //     const date = new Date(); // current date & time
+  //  console.log(date)
+  //     console.log("Year:", date.getFullYear()); // year
+  //     console.log("Month:", date.getMonth()); // month (0–11)
+  //     console.log("Date:", date.getDate()); // date
+  //     console.log("Day:", date.getDay()); // weekday (0–6)
+  //     console.log("Hours:", date.getHours()); // hours
+  //     console.log("Minutes:", date.getMinutes()); // minutes
+  //     console.log("Seconds:", date.getSeconds()); // seconds
+  //     console.log("Milliseconds:", date.getMilliseconds()); // milliseconds
+  //     console.log("Time (ms since 1970):", date.getTime()); // timestamp
+
+
+
+// const date = new Date();
+// // console.log("Before setFullYear:", date);
+
+// date.setMonth(2029);
+// console.log( date);
+
+
+//appointment or event date change
+// const event = new Date();
+// event.setDate(event.getDate() +1); // 7 days later
+// console.log(event);
+
+// //update or incorrect date
+// const event1 = new Date("2026/2/28");
+// event.setDate(28); 
+// console.log(event1);
+
+// //time adjust
+// const task = new Date();
+// task.setHours(9); 
+// task.setMinutes(30);
+// console.log(task);
+
+
+
+// const date = new Date();  // current date & time
+
+// date.setFullYear(2030);      // set year
+// date.setMonth(11);           // set month (0 = Jan, 11 = Dec)
+// date.setDate(25);            // set date
+// date.setHours(15);           // set hours
+// date.setMinutes(45);         // set minutes
+// date.setSeconds(30);         // set seconds
+// date.setMilliseconds(500);   // set milliseconds
+
+// console.log(date);
+
+
+
+
+
+
+const date = new Date(); // current date & time
+
+console.log("toString():", date.toString());               // full date & time
+console.log("toDateString():", date.toDateString());       // date only
+console.log("toTimeString():", date.toTimeString());       // time only
+console.log("toLocaleString():", date.toLocaleString());   // local date + time
+console.log("toLocaleDateString():", date.toLocaleDateString()); // local date
+console.log("toLocaleTimeString():", date.toLocaleTimeString()); // local time
+console.log("toISOString():", date.toISOString());         // ISO format (UTC)
+
+
+
+
+
+
+
+
+
+
+
+
+// const date = new Date(2026, 0, 30, 10, 45, 0); 
+// // Jan 30, 2026 10:45:00 (Local Time)
+
+// console.log("UTC Year:", date.getUTCFullYear());   // 2026
+// console.log("UTC Month:", date.getUTCMonth());     // 0 (January)
+// console.log("UTC Date:", date.getUTCDate());       // 30
+// console.log("UTC Day:", date.getUTCDay());         // 5 (Friday)
+// console.log("UTC Hours:", date.getUTCHours());     // depends on timezone
+// console.log("UTC Minutes:", date.getUTCMinutes()); // depends on timezone
+// console.log("UTC Seconds:", date.getUTCSeconds()); // 0
+
+
+
+
+
+    </script>
+  </body>
+</html>

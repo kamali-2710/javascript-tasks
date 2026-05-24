@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button><a href="./page1.html">Go Back 1 Page</a></button>
+<button><a href="./page2.html">Go Forward 1 Page</a></button>
+<button > <a href="./page3.html">Go Back 2 Pages</a></button> <br>
+<button onclick="goNext()">Next Page</button>
+  
+  <button onclick="goForward()">Forward</button>
+  <button onclick="checkLength()">History Length</button>
+
+  <script>
+    function goNext() {
+      window.location.href = "page2.html";
+    }
+
+    function goBack() {
+      history.back();
+    }
+
+    function goForward() {
+      history.forward();
+    }
+
+    function checkLength() {
+      alert("History Length = " + history.length);
+    }
+     </script>
+</body>
+</html>

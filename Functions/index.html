@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <script>
+      function prmt() {
+        debugger;
+        for (let i = 1; i <= 5; i++) {
+          debugger;
+          for (let j = 1; j <= i; j++) {
+            document.writeln(i);
+          }
+          document.writeln("<br>");
+        }
+      }
+
+      function pattern() {
+        for (let i = 1; i <= 5; i++) {
+          for (let j = 1; j <= 5; j++) {
+            if ((i == 1 || i == 5) || (j == 1 || j == 5)) {
+              document.writeln("*");
+            }
+             else if (
+              (i == 2 && j == 4) ||
+              (i == 3 && j == 3) ||
+              (i == 4 && j == 2)
+            ) 
+            {
+              document.writeln("*");
+            }
+             else {
+              document.writeln("&nbsp;&nbsp");
+            }
+          }
+          document.writeln("<br>");
+        }
+      }
+
+      function initial() {
+        for (let i = 1; i <= 5; i++) {
+          for (let j = 5; j >= i; j--) {
+            document.writeln("M");
+          }
+          document.writeln("<br>");
+        }
+      }
+
+      function star() {
+        for (let i = 1; i <= 4; i++) {
+          for (let j = 1; j <= 4; j++) {
+            if ((i == 1 && i == 4) || j == 3) {
+              document.writeln("*&nbsp");
+            } else if (i == 2 || i == 3) {
+              document.writeln("*&nbsp;");
+            } else {
+              document.writeln("&nbsp;&nbsp");
+            }
+          }
+          document.writeln("<br>");
+        }
+      }
+
+      function numbers() {
+        debugger
+        let a=1
+        for (let i = 1; i <= 5; i++) {
+          for (let j = 1; j <= i; j++) {
+          document.writeln(a);
+          a++
+        }
+        
+        document.writeln("<br>");
+      }
+    }
+
+      let a=prompt("choose the one \n 1.Number pattern \n 2.Diagonal pattern \n 3.Intial pattern \n 4.Star pattern \n 5.Number Reverse pattern \n 6.1 to 15 numbers pattern")
+      switch (a) {
+        case "1":
+          document.writeln("<h1>Number pattern</h1><br><br>");
+          prmt();
+          break;
+        case "2":
+          document.writeln("<h1>Diagonal pattern</h1><br><br>");
+          pattern();
+          break;
+        case "3":
+          document.writeln("<h1>Intial pattern</h1><br><br>");
+          initial();
+          break;
+        case "4":
+          document.writeln("<h1>Star pattern</h1><br><br>");
+          star();
+          break;
+        case "5":
+          numbers();
+          break;
+        case "6":
+          
+          break;
+
+        default:
+          document.write("1 to 5 option only exits");
+      }
+    </script>
+  </body>
+</html>

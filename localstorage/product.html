@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+
+<body>
+    <header>
+        header content
+    </header>
+    <aside>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <h1>Products</h1>
+        <div class="wrapper">
+            <div class="form-box">
+                <h2 class="title">Product Form</h2>
+                <div class="card">
+                    <div class="inner-card">
+                        <input type="text" id="img-url" placeholder="Enter Image URL" />
+                        <span id="urlError" class="error"></span>
+                    </div>
+
+                    <div class="inner-card">
+                        <input type="text" id="prod-name" placeholder="Enter Product Name" />
+                        <span id="prodError" class="error"></span>
+                    </div>
+
+                    <div class="inner-card">
+                        <input type="text" id="category" placeholder="Enter Category" />
+                        <span id="categoryError" class="error"></span>
+                    </div>
+
+                    <div class="inner-card">
+                        <input type="number" id="price" placeholder="Enter Price" />
+                        <span id="priceError" class="error"></span>
+                    </div>
+
+                    <div class="inner-card">
+                        <input type="number" id="stock" placeholder="Enter Stock" />
+                        <span id="stockError" class="error"></span>
+                    </div>
+
+                    <div class="inner-card">
+                        <input type="number" id="offer" placeholder="Enter Offer Price" />
+                        <span id="offerError" class="error"></span>
+                    </div>
+                </div>
+
+                <button onclick="submitData()">SUBMIT</button>
+            </div>
+
+
+
+
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ProductId</th>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Offer</th>
+                    </tr>
+                </thead>
+                <tbody id="productLoads">
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        footer content
+    </footer>
+
+    <script>
+        // [{},{},{}]
+
+        let productLists = [];
+        let submitData = () => {
+            // debugger;
+
+            let pimage = document.getElementById("img-url").value;
+            let pname = document.getElementById("prod-name").value;
+            let category = document.getElementById("category").value;
+            let price = document.getElementById("price").value;
+            let stock = document.getElementById("stock").value;
+            let offer = document.getElementById("offer").value;
+
+            let productData = {
+                productId: Date.now(),
+                productName: pname,
+                category,
+                price,
+                stock,
+                offer,
+                pimage
+            };
+            //obj to array
+            productLists.push(productData)
+            //localstorage
+            localStorage.setItem("productLists", JSON.stringify(productLists))
+
+            loadData()
+        }
+
+        let loadData = () => {
+            let tbody = document.getElementById("productLoads")
+
+            let pl = JSON.parse(localStorage.getItem("productLists"))
+
+            console.log(pl)
+            let tr='';
+            for (let ele of pl) {
+                 tr += `<tr>
+                            <td>${ele.productId}</td>
+                            <td>${ele.productName}</td>
+                            <td>${ele.category}</td>
+                            <td>${ele.price}</td>
+                            <td>${ele.stock}</td>
+                            <td>${ele.offer}</td>
+                        </tr>
+                            `;                       
+            }
+
+             console.log(tr)
+
+             tbody.innerHTML = tr
+            //+=
+            // element  => ***
+            // index ,array => optional 
+        }
+
+        loadData()
+    </script>
+
+</body>
+</html>
+

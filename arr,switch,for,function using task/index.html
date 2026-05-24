@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let student = [];
+
+      let push = () => {
+        let num_of_stn = Number(prompt("enter the number of student?"));
+        for (let i = 1; i <= num_of_stn; i++) {
+          let stnt = prompt(`Enter the ${i} name`);
+          student.push(stnt);
+        }
+        console.log(student);
+      };
+
+
+      let pop = () => {
+        let num_of_stn = Number(
+          prompt("how many num of students want to delete?"),
+        );
+        for (let i = 1; i <= num_of_stn; i++) {
+          student.pop();
+        }
+        console.log(student);
+      };
+      let unshift = () => {
+        let num_of_stn = Number(
+          prompt("how many num of student do you want add"),
+        );
+        for (let i = 1; i <= num_of_stn; i++) {
+          let stnt = prompt(`Enter the ${i} name`);
+          student.unshift(stnt);
+        }
+        console.log(student);
+      };
+      let shift = () => {
+        let num_of_stn = Number(
+          prompt("how many num of student do you want remove"),
+        );
+        for (let i = 1; i <= num_of_stn; i++) {
+          student.shift();
+        }
+        console.log(student);
+      };
+      let join = () => {
+        let j = student.join("|");
+        console.log(j);
+      };
+      let toString = () => {
+        let str = student.toString();
+        console.log(str);
+      };
+      let show = () => {
+        for (let element of student) {
+          console.log(element);
+        }
+      };
+
+      let ischecked = true;
+      while (ischecked) {
+        let num =(
+          prompt(
+            "1.push \n 2.pop \n 3.unshift \n 4.shift \n 5.join \n 6.toString \n 7.show the element \n 8.exit"));
+        switch (num) {
+          case "1":case "a": 
+            push();
+            break;
+          case "2":
+            pop();
+            break;
+          case "3":
+            unshift();
+            break;
+          case "4":
+            shift();
+            break;
+          case "5":
+            join();
+            break;
+          case "6":
+            toString();
+            break;
+          case "7":
+            show();
+            break;
+          case "8":
+            ischecked = false;
+            break;
+
+          default:
+            alert("invalid number it have only 1-8 number");
+        }
+      }
+    </script>
+  </body>
+</html>
